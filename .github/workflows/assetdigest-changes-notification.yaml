@@ -1,4 +1,4 @@
-name: BADC0FFEE Notifier
+name: Notify on AssetDigest changes
 on: [push]
 jobs:
         notify:
