@@ -1,0 +1,12 @@
+name: BADC0FFEE Notifier
+on: [push]
+jobs:
+        notify:
+                runs-on: ubuntu-latest
+                steps:
+                        - name: Discord Webhook Notify
+                          uses: rjstone/discord-webhook-notify@v1.0.1
+                          with:
+                                  severity: info
+                                  text: A new commit was pushed to BADC0FFEE's pogo-assetdigest repo (<@&${{ secrets.DISCORD_ROLE_ID }}>)
+                                  webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
