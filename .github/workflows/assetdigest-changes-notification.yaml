@@ -8,5 +8,5 @@ jobs:
                           uses: rjstone/discord-webhook-notify@v1.0.1
                           with:
                                   severity: info
-                                  text: A new commit was pushed to BADC0FFEE's pogo-assetdigest repo (<@&${{ secrets.DISCORD_ROLE_ID }}>)
+                                  text: A new commit was pushed to BADC0FFEE's pogo-assetdigest repo
                                   webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
